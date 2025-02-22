@@ -22,5 +22,5 @@ jobs:
 
       - name: Test pviz commands
         run: |
-          pviz analyze 99.9
-          pviz compare 99.9 99.95
+          uv run pviz analyze 99.9
+          uv run pviz compare 99.9 99.95

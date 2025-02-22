@@ -1,2 +1,3 @@
-def main() -> None:
-    print("Hello from pviz!")
+from .main import main
+
+main()
