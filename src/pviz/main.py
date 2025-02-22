@@ -52,6 +52,8 @@ class AvailabilityCalculator:
     def compare_with(
         self, other_availability: float
     ) -> Dict[Period, Tuple[TimeUnit, TimeUnit]]:
+        if self.availability == other_availability / 100:
+            raise ValueError("Cannot compare identical availability values")
         other_calc = AvailabilityCalculator(other_availability)
         return {
             period: (
