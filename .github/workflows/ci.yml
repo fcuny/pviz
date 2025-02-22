@@ -20,6 +20,9 @@ jobs:
       - name: Execute Ruff linting check
         run: uvx ruff check
 
+      - name: Run tests
+        run: uv run pytest
+
       - name: Test pviz commands
         run: |
           uv run pviz analyze 99.9

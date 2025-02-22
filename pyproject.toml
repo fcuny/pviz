@@ -1,15 +1,13 @@
 [project]
 name = "pviz"
 version = "0.1.0"
-description = "Add your description here"
+description = "Availability Impact Analyzer"
 readme = "README.md"
 authors = [
-    { name = "Franck Cuny", email = "59291+fcuny@users.noreply.github.com" }
+    { name = "Franck Cuny", email = "59291+fcuny@users.noreply.github.com" },
 ]
 requires-python = ">=3.12"
-dependencies = [
-    "rich>=13.9.4",
-]
+dependencies = ["rich>=13.9.4"]
 
 [project.scripts]
 pviz = "pviz:main"
