@@ -30,6 +30,10 @@ build:
     uv pip install build
     uv run python -m build
 
+# Install the tool
+install:
+    uv tool install . -e --reinstall
+
 # Run the CLI tool with arguments
 run *ARGS:
     uv run pviz {{ARGS}}
